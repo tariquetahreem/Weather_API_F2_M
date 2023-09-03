@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="landingPage" id="landingPage">
+            <div class="landingText">
+                <h1>Weather API</h1>
+                <button type="submit" id="fetchBtn">Fetch Data</button>
+            </div>
+        </div>
+        <div class="displayLocationPage inactive" id="displayLocationPage">
+            <div class="showLocationSection flex">
+                <h2>Welcome To The Weather App</h2>
+                <p>Here is your Current Location</p>
+                <div class="locationDetails">
+                    <div class="weatherProps" id="locationLats">Lat : </div>
+                    <div class="weatherProps" id="locationLongs">Long : </div>
+                </div>
+                <iframe
+                    id="locationFrame"
+                    name="locationFrame"
+                    frameborder="0"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="locationDetailSection flex">
+                <h2>Your Weather Data</h2>
+                <div class="weatherDetails" id="weatherDetails">
+                    <div class="weatherProps bg-purple" id="city">Location : </div>
+                    <div class="weatherProps bg-purple" id="windSpeed">Wind Speed : </div>
+                    <div class="weatherProps bg-purple" id="humidity">Humidity : </div>
+                    <div class="weatherProps bg-purple" id="timeZone">Time Zone : </div>
+                    <div class="weatherProps bg-purple" id="pressure">Pressure : </div>
+                    <div class="weatherProps bg-purple" id="windDir">Wind Direction : </div>
+                    <!-- <div class="weatherProps bg-purple" id="uvIndex">UV Index : </div> -->
+                    <div class="weatherProps bg-purple" id="feelsLike">Feels Like : </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

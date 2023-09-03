@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    max-width: 1800px;
+    margin: auto;
+}
+
+.landingPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(54,3,105);
+    color: white;
+}
+
+.landingText{
+    text-align: center;
+}
+
+h1{
+    font-size: 5rem;
+    margin: 20px;
+}
+
+#fetchBtn{
+    outline: none;
+    border: none;
+    background-color: white;
+    font-weight: 800;
+    font-size: 2rem;
+    padding: 20px;
+    transition: 0.2s ease-in-out;
+    border-radius: 15px;
+}
+
+#fetchBtn:hover{
+    background-color: wheat;
+}
+
+#fetchBtn:focus{
+    scale: 0.9;
+}
+
+.flex{
+    padding: 50px 130px;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.showLocationSection{
+    color: white;
+    background-color: rgb(54,3,105);
+}
+
+.locationDetailSection{
+    color: rgb(54,3,105);
+    background-color: white;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+.locationDetails{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.weatherProps{
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: rgb(32, 2, 61);
+    color: white;
+}
+
+#locationFrame{
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 8px;
+}
+
+.weatherDetails{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.bg-purple{
+    background-color: rgb(54,3,105) !important;
+}
+
+.inactive{
+    display: none;
+}
